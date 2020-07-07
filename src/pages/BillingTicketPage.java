@@ -18,7 +18,7 @@ public class BillingTicketPage {
 	  @FindBy(xpath="//input[contains(@name,'contEmail')]") WebElement email;
 	  @FindBy(xpath="//input[contains(@name,'contPhone')]") WebElement phone;
 	  
-	  //CheckBox for same Address
+	  //CheckBox for same Address // COmmit for QA Branch
 	  @FindBy(css = ".slds-form-element__control.slds-checkbox") WebElement addCheckBox;
 	  
 	  //Billing Address:
