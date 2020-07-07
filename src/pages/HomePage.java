@@ -18,7 +18,7 @@ public class HomePage{
 	
 	// Actions
 	public void clickMenu() {
-		navigationMenu.Click();
+		navigationMenu.click();
 	}
 
 	public void clickOpportunities() {
