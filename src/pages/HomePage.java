@@ -9,7 +9,7 @@ import main.CommonActions;
 public class HomePage{
 
 	//Locator's
-	@FindBy(css=".slds-p-horizontal__xxx-small > lightning-primitive-icon")	WebElement navigationMenu;
+	@FindBy (xpath ="//button[@title='Show Navigation Menu']") WebElement navigationMenu;
 	@FindBy(xpath="//span[@class='slds-media__body']/span[contains(text(),'Opportunities')]")	
 	WebElement opportunitiesSelection;
 	
@@ -18,7 +18,7 @@ public class HomePage{
 	
 	// Actions
 	public void clickMenu() {
-		CommonActions.jsClick(navigationMenu);
+		navigationMenu.Click();
 	}
 
 	public void clickOpportunities() {
