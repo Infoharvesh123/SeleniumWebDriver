@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class BillingTicketPage {
 	
-	  //Locator's
+	  //Locator's // Code QA Change
 	  //Address of Business Registration:
 	  @FindBy(xpath="//input[contains(@name,'rStreet1')]") WebElement street;
 	  @FindBy(xpath="//input[contains(@name,'rCity')]") WebElement city;
@@ -18,7 +18,7 @@ public class BillingTicketPage {
 	  @FindBy(xpath="//input[contains(@name,'contEmail')]") WebElement email;
 	  @FindBy(xpath="//input[contains(@name,'contPhone')]") WebElement phone;
 	  
-	  //CheckBox for same Address
+	  //CheckBox for same Address // COmmit for QA Branch
 	  @FindBy(css = ".slds-form-element__control.slds-checkbox") WebElement addCheckBox;
 	  
 	  //Billing Address:
