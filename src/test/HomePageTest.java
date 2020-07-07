@@ -23,7 +23,7 @@ public class HomePageTest extends TestBase{
 	public void recentOpportunityPageTest() {
 		HomePage homepage = PageFactory.initElements(driver, HomePage.class); 
 		homepage.clickMenu();
-		homepage.clickOpportunities();
+//		homepage.clickOpportunities();
 //		homepage.recentCreatedOpportunities();
 	}
 
