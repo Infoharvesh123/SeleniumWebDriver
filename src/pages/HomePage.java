@@ -9,7 +9,7 @@ import main.CommonActions;
 public class HomePage{
 
 	//Locator's
-	@FindBy (xpath ="//button[@title='Show Navigation Menu']") WebElement navigationMenu;
+	@FindBy (xpath ="//a[@title='Opportunities']") WebElement navigationMenu;
 	@FindBy(xpath="//span[@class='slds-media__body']/span[contains(text(),'Opportunities')]")	
 	WebElement opportunitiesSelection;
 	
