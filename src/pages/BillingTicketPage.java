@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class BillingTicketPage {
 	
-	  //Locator's
+	  //Locator's // Code QA Change
 	  //Address of Business Registration:
 	  @FindBy(xpath="//input[contains(@name,'rStreet1')]") WebElement street;
 	  @FindBy(xpath="//input[contains(@name,'rCity')]") WebElement city;
