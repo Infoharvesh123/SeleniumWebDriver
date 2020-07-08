@@ -21,18 +21,19 @@ public class LoginPageTest extends TestBase {
 
 	}
 		// Test Comment NEW
-	@Test // (priority = 1)
+	@Test  (enabled = false)
 	public void loginPageTitleTest() {
 		LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
 		String title = loginpage.ValidateLoginPageTitle();
 		Assert.assertEquals(title, "Login | Salesforce");
 	}
-
 	@Test // (priority = 2)
 	public void loginTest(){
 		LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
 		loginpage.setUsername(Utils.getPropertyValue("USERNAME"));
+		System.out.println("Givern Username " +Utils.getPropertyValue("USERNAME"));
 		loginpage.setPassword(Utils.getPropertyValue("PASSWORD"));
+		System.out.println("Givern Username " +Utils.getPropertyValue("PASSWORD"));
 		loginpage.clickLogin();
 		CommonActions.clearOpenTabs();
 	}
