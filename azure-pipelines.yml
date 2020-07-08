@@ -10,7 +10,6 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'verify test'
     options: '-DUSERNAME=harvesh -DPASSWORD=test123'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
