@@ -18,4 +18,3 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-    mavenOptions: '-DUSERNAME=harvesh'
