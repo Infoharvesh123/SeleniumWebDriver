@@ -10,7 +10,7 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'test'
+    goals: 'package'
     options: '-DUSERNAME=harevsh'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
