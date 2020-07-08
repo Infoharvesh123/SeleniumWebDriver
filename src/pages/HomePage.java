@@ -18,7 +18,7 @@ public class HomePage{
 	
 	// Actions
 	public void clickMenu() {
-		navigationMenu.click();
+		CommonActions.jsClick(navigationMenu);
 	}
 
 	public void clickOpportunities() {
