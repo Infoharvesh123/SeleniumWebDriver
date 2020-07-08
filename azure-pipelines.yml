@@ -11,7 +11,6 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'test'
-    options: '-Dtest=LoginPageTest'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
