@@ -41,6 +41,35 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
+	    <plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>properties-maven-plugin</artifactId>
+				<version>1.0-alpha-2</version>
+				<executions>
+					<execution>
+						<id>Read default + runtime properties</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>read-project-properties</goal>
+						</goals>
+						<configuration>
+							<files>
+								<file>config.properties</file>
+							</files>
+						</configuration>
+					</execution>
+					<execution>
+						<id>Write all the properties to the test.properties file</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>write-project-properties</goal>
+						</goals>
+						<configuration>
+							<outputFile>test.properties</outputFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin
     </plugins>
   </build>
   <!-- Include the following dependencies -->
